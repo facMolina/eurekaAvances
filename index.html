@@ -1,0 +1,167 @@
+<html>
+ <head>
+  <title>
+   Eureka
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;family=Della+Respira&amp;family=Work+Sans:wght@700&amp;family=Cinzel&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #282c30;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .navbar .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2A6DB0;
+            color: white;
+            padding: 60px 40px;
+        }
+        .hero .text {
+            max-width: 50%;
+        }
+        .hero .text h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 64px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .hero .text h2 {
+            font-family: 'Della Respira', serif;
+            font-size: 24px;
+            font-weight: 300;
+            margin: 20px 0;
+            line-height: 1.2;
+        }
+        .hero .text .subheading {
+            font-family: 'Della Respira', serif;
+            font-size: 24px;
+            color: #6dc9dd;
+        }
+        .hero .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 800px) {
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 40px;
+                background-color: white;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            .navbar .menu a {
+                margin: 10px 0;
+            }
+            .navbar .hamburger {
+                display: block;
+            }
+            .navbar .menu.show {
+                display: flex;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero .text {
+                max-width: 100%;
+            }
+        }
+  </style>
+  <script>
+   function toggleMenu() {
+            const menu = document.querySelector('.navbar .menu');
+            menu.classList.toggle('show');
+        }
+  </script>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <i class="fas fa-graduation-cap">
+    </i>
+    <a href="#" style="text-decoration: none;">
+     <span>
+      EUREKA
+     </span>
+    </a>
+   </div>
+   <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars">
+    </i>
+   </div>
+   <div class="menu">
+    <a href="#">
+     Integrantes
+    </a>
+    <a href="#">
+     Proyecto
+    </a>
+   </div>
+  </div>
+  <div class="hero">
+   <div class="text">
+    <h2 class="subheading">
+     INSTITUTO DE APOYO UNIVERSITARIO
+    </h2>
+    <h1>
+     ¡Lo encontraste!
+     <br/>
+     El apoyo que
+     <br/>
+     necesitas
+    </h1>
+    <h2>
+     Preparación de INGRESOS, PARCIALES y FINALES de diversas
+     <br/>
+     carreras universitarias.
+    </h2>
+   </div>
+   <div class="image">
+    <img alt="Two students, one male and one female, smiling and holding books and a phone" src="https://placehold.co/500x500"/>
+   </div>
+  </div>
+ </body>
+</html>
