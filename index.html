@@ -11,6 +11,8 @@
             font-family: 'Roboto', sans-serif;
         }
         .navbar {
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -22,12 +24,12 @@
             align-items: center;
         }
         .navbar .logo i {
-            font-size: 24px;
+            font-size: 20px;
             margin-right: 10px;
         }
         .navbar .logo span {
             font-family: 'Cinzel', serif;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
             color: #282c30;
         }
@@ -39,12 +41,12 @@
             text-decoration: none;
             color: black;
             font-family: 'Work Sans', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
         }
         .navbar .hamburger {
             display: none;
-            font-size: 24px;
+            font-size: 20px;
             cursor: pointer;
         }
         .hero {
@@ -60,26 +62,59 @@
         }
         .hero .text h1 {
             font-family: 'Work Sans', sans-serif;
-            font-size: 64px;
+            font-size: 70px;
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
         }
         .hero .text h2 {
             font-family: 'Della Respira', serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 300;
             margin: 20px 0;
             line-height: 1.2;
         }
         .hero .text .subheading {
             font-family: 'Della Respira', serif;
-            font-size: 24px;
+            font-size: 22px;
             color: #6dc9dd;
         }
         .hero .image img {
             max-width: 100%;
             height: auto;
+        }
+        .container_propuesta {
+            margin: 110px auto 0 auto;
+            text-align: left;
+            max-width: 100%;
+            padding: 20px 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+        h3 {
+            color: #294e7a;
+            font-size: 55px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .underline_propuesta {
+            width: 200px;
+            height: 3px;
+            background-color: #294e7a;
+            margin: 0 auto 20px auto;
+        }
+        p {
+            color: #4a4a4a;
+            font-size: 25px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: 700;
         }
         @media (max-width: 800px) {
             .navbar .menu {
@@ -107,6 +142,16 @@
             }
             .hero .text {
                 max-width: 100%;
+                order: 2;
+            }
+            .hero .image {
+                order: 1;
+            }
+            .container_propuesta {
+                padding: 20px 20px;
+            }
+            p {
+                text-align: justify;
             }
         }
   </style>
@@ -162,6 +207,29 @@
    <div class="image">
     <img alt="Dos estudiantes, un hombre y una mujer, sonriendo y sosteniendo libros y un teléfono" src="https://placehold.co/500x500"/>
    </div>
+  </div>
+  <div class="container_propuesta">
+   <h3>
+    Nuestra Propuesta
+   </h3>
+   <div class="underline_propuesta">
+   </div>
+   <p>
+    Nuestro principal objetivo como instituto es ofrecer apoyo académico personalizado a estudiantes universitarios de entre 18 y 25 años, quienes buscan mejorar su rendimiento académico con métodos de estudio flexibles y accesibles.
+   </p>
+   <p>
+    Nos enfocamos en ayudar a los estudiantes a desarrollar estrategias de aprendizaje efectivas, adaptadas a sus necesidades y tiempos, brindándoles un acompañamiento constante que les permita alcanzar sus metas educativas.
+   </p>
+   <p>
+    Nuestra forma de impulsar el proyecto es a través de nuestras plataformas, donde los estudiantes pueden inscribirse a nuestras clases o acceder a recursos gratuitos que les ayudarán a mejorar sus estudios.
+   </p>
+   <p>
+    Nuestra motivación principal es brindar a los jóvenes herramientas que les permitan enfrentar con confianza los desafíos académicos y así lograr sus objetivos educativos. Creemos que con el apoyo adecuado, todos los estudiantes pueden tener su propio
+    <span class="highlight">
+     “Eureka”
+    </span>
+    en su camino universitario.
+   </p>
   </div>
  </body>
 </html>
