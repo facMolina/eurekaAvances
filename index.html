@@ -36,6 +36,8 @@
         .navbar .menu {
             display: flex;
             gap: 20px;
+            cursor: pointer; 
+            text-decoration: none; 
         }
         .navbar .menu a {
             text-decoration: none;
@@ -89,8 +91,8 @@
         
         .hero .image img {
             position: absolute;
-            bottom: 0;
-            right: 40px; 
+            bottom: 307px;
+            right: 200px; 
             max-width: 100%;
             height: auto;
         }
@@ -107,7 +109,7 @@
         }
         h3 {
             color: #294e7a;
-            font-size: 55px;
+            font-size: 45px;
             font-weight: 700;
             text-align: center;
             margin-bottom: 10px;
@@ -120,7 +122,7 @@
         }
         p {
             color: #4a4a4a;
-            font-size: 25px;
+            font-size: 20px;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -193,14 +195,12 @@
             }
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 10 auto;
+            flex-wrap: wrap;
         }
         .header {
-            background-color: #e9ecef;
+            display: flex;
             padding: 20px;
-            border-radius: 8px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -208,7 +208,7 @@
             flex-wrap: wrap;
         }
         .header div:first-child {
-            margin-left: 20px;
+            margin-left: 400px;
         }
         .header h1 {
             font-size: 24px;
@@ -225,25 +225,30 @@
         }
         .header .logo {
             text-align: center;
-            margin-right: 20px;
+            margin-right: 30px;
         }
         .header .logo img {
-            width: 120px;
-            margin-left: -20px;
+            width: 320px;
+            margin-left: -80px;
+            position: absolute;
+            bottom: 0px;
+            right: 400px;
         }
         .header .logo p {
-            font-size: 16px;
+            font-size: 30px;
             color: #274972;
-            margin: 5px 0 0 0;
+            margin: 200px 470 0 0;
             font-weight: 700;
+
         }
         .button-container {
             position: absolute;
-            bottom: 10px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
         }
         .button {
+            text-decoration: none;
             background-color: #6dc9dd;
             color: white;
             padding: 10px 20px;
@@ -284,13 +289,13 @@
             flex-wrap: wrap;
         }
         .color {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: bold;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             border: 1px solid #000;
@@ -315,13 +320,96 @@
             background-color: #000000;
             color: #fff;
         }
+        .team {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .team h2 {
+            font-size: 24px;
+            color: #274972;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        .team h2::after {
+            content: '';
+            display: block;
+            width: 150px;
+            height: 2px;
+            background-color: #274972;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .teams {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .team-member h3 {
+            margin: 15px 0 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .team-member p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .arbol {
+            text-align: left;
+            margin-top: 40px;
+            margin-left: 430px;
+        }
+        .arbol h2 {
+            font-size: 24px;
+            color: #274972;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
         @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                align-items: center;
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+                text-align: center;
+                position: static;
             }
+            .header {
+                flex-direction: column; 
+                align-items: center; 
+                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .header p  {
+                margin: -20px;
+            }
+
+
             .header .logo {
-                margin: 20px 0 0 0;
+                margin: 20px 0 0 0; /* Ajustar márgenes para mejor disposición */
+                text-align: center;
+            }
+
+            .button-container {
+                position: static; /* Cambiar a estático para evitar problemas de posicionamiento */
+                margin-top: 20px;
                 text-align: center;
             }
             .header .logo img {
@@ -361,7 +449,7 @@
     </i>
    </div>
    <div class="menu">
-    <a href="#">
+    <a onclick="location.href='#team'">
      Integrantes
     </a>
     <a href="#">
@@ -437,15 +525,15 @@
      </p>
     </div>
     <div class="logo">
-     <img alt="Logo de un birrete de graduación" src="https://placehold.co/120x120"/>
+     <img alt="Logo de un birrete de graduación" src="img/logo.png"/>
      <p>
       Logo
      </p>
     </div>
     <div class="button-container">
-     <button class="button">
-      Prototipado
-     </button>
+        <a class="button" href="https://design.penpot.app/#/view/42a0cdf3-4d18-8022-8005-0c805e9dbe29?page-id=3eb315d6-930f-8018-8005-15ab06e0739f&section=interactions&index=0" target="_blank">
+            Prototipado
+        </a>
     </div>
    </div>
    <div class="palette">
@@ -470,6 +558,54 @@
      </div>
     </div>
    </div>
+   <div class="team">
+    <h2 id="team">
+        Nuestro equipo
+    </h2>
+   </div>
+   <div class="teams">
+    <div class="team-member">
+        <img alt="Foto de Martin Pablo Carballo" height="200" src="img/Foto Martin.png" width="200"/>
+        <h3>
+        Martin Pablo Carballo           
+        </h3>
+        <p>
+            Comunicador Web
+        </p>
+    </div>
+    <div class="team-member">
+        <img alt="Foto de Juliana Gómez Traverso" src="img/Foto Juliana.jpg"/>
+        <h3>
+        Juliana Gómez Traverso
+        </h3>
+        <p>
+            Diseñadora UX/UI
+        </p>
+    </div>
+    <div class="team-member">
+        <img alt="Foto de Facundo Román Molina" height="200" src="img/Foto Facundo.png" width="200"/>
+        <h3>
+        Facundo Román Molina
+        </h3>
+        <p>
+           Maquetador
+        </p>
+    </div>
+    <div class="team-member">
+        <img alt="Foto de Ana María Martínez Pérez" src="img/Foto Ana.png"/>
+        <h3>
+        Ana María Martínez Pérez
+        </h3>
+        <p>
+          Programadora
+        </p>
+    </div>
+    </div>
+    <div class="arbol">
+        <h2>
+            Árbol del Proyecto
+        </h2>
+    </div>
   </div>
   <footer>
    <p>
