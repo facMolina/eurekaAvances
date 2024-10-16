@@ -149,60 +149,7 @@
             width: 180px;
             height: 100%;
         }
-        @media (max-width: 800px) {
-            .navbar .menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 40px;
-                background-color: white;
-                border: 1px solid #ccc;
-                padding: 10px;
-            }
-            .navbar .menu a {
-                margin: 10px 0;
-            }
-            .navbar .hamburger {
-                display: block;
-            }
-            .navbar .menu.show {
-                display: flex;
-            }
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-            .hero .text {
-                max-width: 100%;
-                order: 2;
-            }
-            .hero .image {
-                display: none;
-            }
-            .container_propuesta {
-                padding: 20px 20px;
-            }
-            p {
-                text-align: justify;
-            }
-            footer {
-                text-align: center;
-                padding: 10px 0;
-            }
-            footer img {
-                display: none;
-            }
-            .arbol {
-                margin-left: 0;
-                text-align: center;
-            }
-            .arbol img {
-                flex-direction: column;
-                align-items: center;
-            }
 
-        }
         .container {
             margin: 10 auto;
             flex-wrap: wrap;
@@ -411,33 +358,87 @@
                 flex-direction: column; 
                 align-items: center; 
                 text-align: center;
-                flex-direction: row;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
-
-            .header p  {
-                margin: -20px;
-            }
-
-
-            .header .logo {
-                margin: 20px 0 0 0; /* Ajustar márgenes para mejor disposición */
+            .header h1 {
+                font-size: 24px; 
+                margin: 10px 0;
+                line-height: 1.2;
                 text-align: center;
             }
-
-            .button-container {
-                position: static; /* Cambiar a estático para evitar problemas de posicionamiento */
-                margin-top: 20px;
+            .header p  {
+                font-size: 16px; 
+                margin: 5px 0;
+                line-height: 1.4;
+                text-align: center;
+            }
+            .header .logo {
+                margin: 20px 0 0 0;
                 text-align: center;
             }
             .header .logo img {
-                margin-left: 0;
+                margin: 0 auto; 
+                display: block;
+                margin-bottom: 30px;
+                /*centra la imagen en la pantalla*/
+                align-items: center;
             }
             .button-container {
                 position: static;
-                transform: none;
                 margin-top: 20px;
                 text-align: center;
+            }
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 40px;
+                background-color: white;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            .navbar .menu a {
+                margin: 10px 0;
+            }
+            .navbar .hamburger {
+                display: block;
+            }
+            .navbar .menu.show {
+                display: flex;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero .text {
+                max-width: 100%;
+                order: 2;
+            }
+            .hero .image {
+                display: none;
+            }
+            .container_propuesta {
+                padding: 20px 20px;
+            }
+            p {
+                text-align: justify;
+            }
+            footer {
+                text-align: center;
+                padding: 10px 0;
+            }
+            footer img {
+                display: none;
+            }
+            .arbol {
+                margin-left: 0;
+                text-align: center;
+            }
+            .arbol img {
+                flex-direction: column;
+                align-items: center;
             }
             .colors {
                 flex-direction: column;
@@ -549,7 +550,7 @@
      </p>
     </div>
     <div class="button-container">
-        <a class="button" href="https://design.penpot.app/#/view/42a0cdf3-4d18-8022-8005-0c805e9dbe29?page-id=3eb315d6-930f-8018-8005-15ab06e0739f&section=interactions&index=0" target="_blank">
+        <a class="button" href="https://design.penpot.app/#/view/42a0cdf3-4d18-8022-8005-0c805e9dbe29?page-id=42a0cdf3-4d18-8022-8005-0c805e9dbe2a&section=interactions&index=0&share-id=f4c411c4-dd43-81ae-8005-147be38a9650" target="_blank">
             Prototipado
         </a>
     </div>
