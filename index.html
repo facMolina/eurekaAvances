@@ -89,11 +89,10 @@
             font-size: 22px;
             color: #6dc9dd;
         }
-        
         .hero .image img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 0;
+            margin-bottom: -15px;
             align-self: flex-end;
             position: sticky;
         }
@@ -126,6 +125,7 @@
             font-size: 20px;
             line-height: 1.6;
             margin-bottom: 20px;
+            text-align: center;
         }
         .highlight {
             font-weight: 700;
@@ -185,23 +185,30 @@
         }
         .header .logo img {
             width: 320px;
-            margin-left: -80px;
-            position: absolute;
-            bottom: 0px;
-            right: 400px;
+            position: relative;    
         }
         .header .logo p {
             font-size: 30px;
             color: #274972;
-            margin: 200px 470 0 0;
             font-weight: 700;
+            width: 620px;
+            position: relative;  
 
         }
-        .button-container {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+        .header .button-wrapper .button-container {
+            margin-top: 40px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
+            margin-left: -20px;
+        }
+
+        .header .button-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
         }
         .button {
             text-decoration: none;
@@ -348,13 +355,31 @@
         }
         
         @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                height: auto;
+            }
             .hero .text {
+                max-width: 100%;
+                order: 2;
                 padding: 10px;
             }
-
+            .hero .text h1 {
+                font-size: 40px;
+            }
             .hero .text h2 {
                 font-size: 16px;
                 line-height: 1.2;
+            }
+            .hero .text .subheading {
+                font-size: 18px;
+                line-height: 1.3;
+                margin-bottom: 10px;
+            }
+            .hero .image {
+                display: none;
             }
 
             .subheading {
@@ -424,7 +449,7 @@
             }
             .button-container {
                 position: static;
-                margin-top: 20px;
+                margin-top: 10px;
                 text-align: center;
                 width: 10%;
             }
@@ -520,33 +545,33 @@
     <a onclick="location.href='#team'">
      Integrantes
     </a>
-    <a href="#">
+    <a href="https://facmolina.github.io/eureka/" target="_blank">
      Proyecto
     </a>
    </div>
   </div>
   <div class="hero">
-   <div class="text">
-    <h2 class="subheading">
-     INSTITUTO DE APOYO UNIVERSITARIO
-    </h2>
-    <h1>
-     ¡Lo encontraste!
-     <br/>
-     El apoyo que
-     <br/>
-     necesitas
-    </h1>
-    <h2>
-     Preparación de INGRESOS, PARCIALES y FINALES de diversas
-     <br/>
-     carreras universitarias.
-    </h2>
-   </div>
-   <div class="image">
-    <img alt="Dos estudiantes, un hombre y una mujer, sonriendo y sosteniendo libros y un teléfono" src="img/alumnos.png"/>
-   </div>
-  </div>
+    <div class="text">
+     <h2 class="subheading">
+      INSTITUTO DE APOYO UNIVERSITARIO
+     </h2>
+     <h1>
+      ¡Lo encontraste!
+      <br/>
+      El apoyo que
+      <br/>
+      necesitas
+     </h1>
+     <h2>
+      Preparación de INGRESOS, PARCIALES y FINALES de diversas
+      <br/>
+      carreras universitarias.
+     </h2>
+    </div>
+    <div class="image">
+     <img alt="Dos estudiantes, un hombre y una mujer, sonriendo y sosteniendo libros y un teléfono" src="img/alumnos.png"/>
+    </div>
+   </div>    
   <div class="container_propuesta">
    <h3>
     Nuestra Propuesta
@@ -571,39 +596,32 @@
    </p>
   </div>
   <div class="container">
-   <div class="header">
-    <div>
-     <h1>
-      Nombre del Proyecto
-     </h1>
-     <p>
-      Instituo de Apoyo Universitario: Eureka
-     </p>
-     <h1>
-      Eslogan
-     </h1>
-     <p>
-      ¡Lo encontraste! El apoyo que necesitas
-     </p>
-     <h1>
-      Dominio
-     </h1>
-     <p>
-      Se utilizará el dominio de GitHub Pages
-     </p>
+    <div class="header">
+        <div>
+            <h1>Nombre del Proyecto</h1>
+            <p>Instituo de Apoyo Universitario: Eureka</p>
+            <h1>Eslogan</h1>
+            <p>¡Lo encontraste! El apoyo que necesitas</p>
+            <h1>Dominio</h1>
+            <p>Se utilizará el dominio de GitHub Pages</p>
+        </div>
+        <div class="logo">
+            <img alt="Logo de un birrete de graduación" src="img/logo.png"/>
+            <p>Logo</p>
+        </div>
+        <div class="button-wrapper">
+            <div class="button-container">
+                <a class="button" href="https://design.penpot.app/#/view/42a0cdf3-4d18-8022-8005-0c805e9dbe29?page-id=42a0cdf3-4d18-8022-8005-0c805e9dbe2a&section=interactions&index=1&share-id=f4c411c4-dd43-81ae-8005-147be38a9650" target="_blank">
+                    Prototipado
+                </a>
+            </div>
+            <div class="button-container">
+                <a class="button" href="https://github.com/facMolina/eureka" target="_blank">
+                    Github
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="logo">
-     <img alt="Logo de un birrete de graduación" src="img/logo.png"/>
-     <p>
-      Logo
-     </p>
-    </div>
-    <div class="button-container">
-        <a class="button" href="https://design.penpot.app/#/view/42a0cdf3-4d18-8022-8005-0c805e9dbe29?page-id=42a0cdf3-4d18-8022-8005-0c805e9dbe2a&section=interactions&index=0&share-id=f4c411c4-dd43-81ae-8005-147be38a9650" target="_blank">
-            Prototipado
-        </a>
-    </div>
-   </div>
    <div class="palette">
     <h2>
      Paleta de Colores
@@ -668,6 +686,14 @@
           Programadora
         </p>
     </div>
+    <div class="team-member">
+        <img alt="Foto de Juan Ventola" height="200" src="img/Juan_ventola.jpeg" width="200"/>
+        <h3>
+         Juan Ventola
+        </h3>
+        <p>
+            Programador
+          </p>
     </div>
     <div class="arbol">
         <h2>
